@@ -17,7 +17,7 @@ namespace DrivingLicenceTest
             int i = 0;
 
             //File stream object
-            FileStream fileStream = new FileStream(@"d:\testResults.txt", FileMode.Open, FileAccess.Read);
+            FileStream fileStream = new FileStream(@"C:\testResults.txt", FileMode.Open, FileAccess.Read);
           
             //Reading data from file
             using (var streamReader = new StreamReader(fileStream, Encoding.UTF8))

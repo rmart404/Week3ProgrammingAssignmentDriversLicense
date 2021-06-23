@@ -1,0 +1,16 @@
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ProgrammingAssignmentDriverLicense.exe
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ProgrammingAssignmentDriverLicense.deps.json
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ProgrammingAssignmentDriverLicense.runtimeconfig.json
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ProgrammingAssignmentDriverLicense.runtimeconfig.dev.json
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ProgrammingAssignmentDriverLicense.dll
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ref\ProgrammingAssignmentDriverLicense.dll
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\bin\Debug\net5.0\ProgrammingAssignmentDriverLicense.pdb
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.csproj.AssemblyReference.cache
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.AssemblyInfoInputs.cache
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.AssemblyInfo.cs
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.csproj.CoreCompileInputs.cache
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.dll
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ref\ProgrammingAssignmentDriverLicense.dll
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.pdb
+C:\Users\Ray\Projects\ProgrammingAssignmentDriverLicense\obj\Debug\net5.0\ProgrammingAssignmentDriverLicense.genruntimeconfig.cache
