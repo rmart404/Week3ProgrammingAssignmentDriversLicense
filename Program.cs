@@ -1,87 +1,44 @@
 ﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace DrivingLicenceTest
+namespace ConsoleApp // Project name
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //Array that holds the correct answers
-            string[] correctAnswers = new string[] { "B", "D", "A", "A", "C", "A", "B", "A", "C", "D", "B", "C", "D", "A", "D", "C", "C", "B", "D", "A" };
-            string[] userAnswers = new string[20];
 
-            int i = 0;
+class Program
+{
 
-            //File stream object
-            FileStream fileStream = new FileStream(@"C:\testResults.txt", FileMode.Open, FileAccess.Read);
-          
-            //Reading data from file
-            using (var streamReader = new StreamReader(fileStream, Encoding.UTF8))
-            {
-                string line;
+public static void Main(string[] args)
+{
+int SIZE = 20;
+char[] answers = { 'B', 'D', 'A', 'A', 'C', 'A', 'B', 'A', 'C', 'D', 'B', 'C', 'D', 'A', 'D', 'C', 'C', 'B', 'D', 'A' };
+char[] userInput = new char[SIZE];
+int numberOfCorrect = 0, numberOfWrong = 0;
+for (int i = 0; i < SIZE; i++)
+{
+Console.Write("Enter Question {0} answer : ", i + 1);
+// read user input
+userInput[i] = char.Parse(Console.ReadLine());
+// check the answer
+if (answers[i] != userInput[i])
+numberOfWrong++;
+else
+numberOfCorrect++;
+}
+// check if user pass or fail
+if (numberOfCorrect >= 15)
+Console.WriteLine("\nYou have passed");
+else
+Console.WriteLine("\nYou have failed");
+Console.WriteLine("\nTotal number of correct answers : {0}", numberOfCorrect);
+Console.WriteLine("Total number of wrong answers : {0}", numberOfWrong);
+Console.WriteLine("\n\nQuestions which you have inputed worng : ");
 
-                //Itertate till all lines are processed
-                while ((line = streamReader.ReadLine()) != null)
-                {
-                    //Storing user answer
-                    userAnswers[i] = line;
-
-                    //Incrementing index
-                    i = i + 1;
-                }
-            }
-          
-            int correctAnswerCnt = 0, inCorrectAnswerCnt=0;
-
-            //List to hold incorrect answers
-            List<int> incorrectAnswers = new List<int>();
-
-            //Iterating over each answer
-            for (i = 0; i < 20; i++)
-            {
-                //Comparing answers
-                if (userAnswers[i].Equals(correctAnswers[i]))
-                {
-                    //Updating counters
-                    correctAnswerCnt += 1;
-                }
-                else
-                {
-                    //Updating counters
-                    inCorrectAnswerCnt += 1;
-
-                    //Adding to list
-                    incorrectAnswers.Add(i + 1);
-                }
-            }
-
-            //Prnting results
-            if (correctAnswerCnt >= 15)
-            {
-                Console.WriteLine("\n Test Result: Pass \n");
-            }
-            else
-            {
-                Console.WriteLine("\n Test Result: Fail \n");
-            }
-
-            //Printing counts
-            Console.WriteLine("\n Total Number of correct answers: " + correctAnswerCnt.ToString());
-            Console.WriteLine("\n Total Number of incorrect answers: " + inCorrectAnswerCnt.ToString());
-
-            Console.WriteLine("\n\n Question numbers of the incorrectly answered questions: \n");
-
-            //Printing incorrect answers line numbers
-            for (i = 0; i < incorrectAnswers.Count; i++)
-            {
-                Console.Write(" " + incorrectAnswers[i]);
-            }
-
-            Console.ReadKey();
-        }
-    }
+// output worng answer entered
+for (int i = 0; i < SIZE; i++)
+{
+if (answers[i] != userInput[i])
+Console.WriteLine("Question {0}", (i + 1));
+}
+Console.ReadKey();
+}
+}
 }
