@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DriverLicense // Project name
+namespace DriverLicense
 {
 
 class Program
@@ -14,25 +14,24 @@ char[] userInput = new char[SIZE];
 int numberOfCorrect = 0, numberOfWrong = 0;
 for (int i = 0; i < SIZE; i++)
 {
-Console.Write("Enter Question {0} answer : ", i + 1);
-// read user input
+Console.Write("What is the answer for question {0}: ", i + 1);
+
 userInput[i] = char.Parse(Console.ReadLine());
-// check the answer
+
 if (answers[i] != userInput[i])
 numberOfWrong++;
 else
 numberOfCorrect++;
 }
-// check if user pass or fail
-if (numberOfCorrect >= 15)
-Console.WriteLine("\nYou have passed");
-else
-Console.WriteLine("\nYou have failed");
-Console.WriteLine("\nTotal number of correct answers : {0}", numberOfCorrect);
-Console.WriteLine("Total number of wrong answers : {0}", numberOfWrong);
-Console.WriteLine("\n\nQuestions which you have inputed worng : ");
 
-// output worng answer entered
+if (numberOfCorrect >= 15)
+Console.WriteLine("\nCongratulations! You have passed");
+else
+Console.WriteLine("\nI am sorry. You have failed");
+Console.WriteLine("\nNumber of correct answers : {0}", numberOfCorrect);
+Console.WriteLine("\nNumber of wrong answers : {0}", numberOfWrong);
+Console.WriteLine("\n\nList of questions you got wrong : ");
+
 for (int i = 0; i < SIZE; i++)
 {
 if (answers[i] != userInput[i])
