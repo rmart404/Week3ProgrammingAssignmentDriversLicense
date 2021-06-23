@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp // Project name
+namespace DriverLicense // Project name
 {
 
 class Program
